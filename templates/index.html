@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <center>
+            <h1 style="margin-top:20vh;"> Auto MPG Prediction </h1><br>
+            <div id='card1'>
+                <form method="POST", action="{{url_for('predict')}}">
+                <b> <input type="textarea", name='Cylinders', placeholder="enter Cylinders",rows="4">
+                    <input type="textarea", name='Displacement', placeholder="enter Displacement",rows="4">
+                    <input type="textarea", name='Horsepower', placeholder="enter Horsepower",rows="4">
+                    <input type="textarea", name='Weight', placeholder="enter Weight",rows="4">
+                    <input type="textarea", name='Acceleration', placeholder="enter Acceleration",rows="4">
+                    <input type="textarea", name='Model Year', placeholder="enter Model Year",rows="4">
+                    <input type="textarea", name='Origin', placeholder="enter Origin",rows="4"> <br><br></b>
+                    <button type="submit" class="btn" value='predict!' >predict</button>
+                    
+                </form>
+            </div>
+            <br><br>
+            <p>{{data}}</p>
+            
+        </center>
+    </body>
+</html>
